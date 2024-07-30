@@ -14,6 +14,8 @@ public class OnlineMasterMarket {
     // @FindBy(xpath="//*[@*=' ']") formatında
     // web sayfasına ait web elementlerin locate'i alınacaktır.
 
+    //LOCATE'i ALINAN WEB ELEMENTLERI ICIN ACIKLAYICI YORUM SATIRI YAZINIZ
+
     @FindBy(xpath = "//a[@class='btn btn-signin']")  //Anasayfadaki Login Butonu
     public WebElement mainPageLoginButton;
 
@@ -28,12 +30,6 @@ public class OnlineMasterMarket {
 
     @FindBy(xpath = "//*[@id='emaillogin_submit']") // Email ve password'u onaylamak icin enter butonu
     public WebElement enterButton;
-
-
-
-
-
-
 
 
 }
