@@ -7,7 +7,7 @@ import utilities.Driver;
 
 public class OmmCategories{
 
-    public OmmCategories{
+    public OmmCategories(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
