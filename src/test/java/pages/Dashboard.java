@@ -7,7 +7,7 @@ import utilities.Driver;
 
 public class Dashboard{
 
-    public Dashboard{
+    public Dashboard(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
