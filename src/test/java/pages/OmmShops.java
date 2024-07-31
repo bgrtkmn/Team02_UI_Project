@@ -7,7 +7,7 @@ import utilities.Driver;
 
 public class OmmShops{
 
-    public OmmShops{
+    public OmmShops(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
