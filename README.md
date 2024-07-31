@@ -7,12 +7,14 @@ Açılan pencerede "Repository URL" sekmesini seçin ve "URL" kutucuğuna aşağ
 "https://github.com/bgrtkmn/Team02_UI_Project.git" linkini kopyalayıp yapıştırın. 
 En sonda da "clone" butonuna basın.
 
-2. Bilgisayarınıza "Git" yüklü olmalıdır. Eğer yüklü değil ise aşağıdaki linkten indirebilirsiniz.
+2. pom.xml dosyasını açın ve "maven" ı güncelleyin.
+
+3. Bilgisayarınıza "Git" yüklü olmalıdır. Eğer yüklü değil ise aşağıdaki linkten indirebilirsiniz.
 https://git-scm.com/downloads
 
-3. IDE'yi çalıştırın ve terminali açın. Açılan terminale "git init" yazarak "Git" i çalıştırın.
+4. IDE'yi çalıştırın ve terminali açın. Açılan terminale "git init" yazarak "Git" i çalıştırın.
 
-4. Configuration.properties dosyası ".gitignore" dosyasına eklenmelidir. Aksi halde kodlar çakışacak ve 
+5. Configuration.properties dosyası ".gitignore" dosyasına eklenmelidir. Aksi halde kodlar çakışacak ve 
 sorun yaşanacaktır. 
 Configuration.properties dosyanısını .gitignore'a eklemek için "/configuration.properties" .gitignore içine kopyala-yapıştır yapınız.
 Eklemekte sorun yaşıyorsanız teknik destekten yardım alabilirsiniz.
