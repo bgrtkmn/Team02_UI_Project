@@ -7,7 +7,7 @@ import utilities.Driver;
 
 public class OnlineMasterMarket {
 
-    public OnlineMasterMarket{
+    public OnlineMasterMarket(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
