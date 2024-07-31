@@ -7,7 +7,7 @@ import utilities.Driver;
 
 public class Dashboard{
 
-    public OnlineMasterMarket{
+    public Dashboard{
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
