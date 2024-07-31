@@ -7,7 +7,7 @@ import utilities.Driver;
 
 public class OmmContactUs{
 
-    public OmmContactUs{
+    public OmmContactUs(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
