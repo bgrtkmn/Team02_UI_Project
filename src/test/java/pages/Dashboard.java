@@ -11,6 +11,7 @@ public class Dashboard{
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
+
     // @FindBy(xpath="//*[@*=' ']") formatında
     // web sayfasına ait web elementlerin locate'i alınacaktır.
 
