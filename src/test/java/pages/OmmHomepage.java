@@ -6,8 +6,8 @@ import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
 public class OmmHomepage {
-    public OmmHomepage(){
-        PageFactory.initElements(Driver.getDriver(),this);
+    public OmmHomepage() {
+        PageFactory.initElements(Driver.getDriver(), this);
     }
 
     // @FindBy(xpath="//*[@*=' ']") formatında
@@ -30,6 +30,20 @@ public class OmmHomepage {
 
 
     // Personel services sayfasında bulunan hair style servisinin locate i
+
+    @FindBy(xpath = "//*[@id=\"shops-tab\"]")
+    public WebElement Shops;
+
+
+    @FindBy(xpath = "//*[@id=\"dataListShop\"]/div[1]/div/div/div[4]")
+    public WebElement VisitStoreIkonu;
+
+    @FindBy(xpath = "//*[@id=\"services_lists\"]/div")
+    public WebElement VitalBalanceVisitStore;
+
+    @FindBy(xpath = "/html/body/div[1]/div[1]/div/div[2]/div[1]/div[1]")
+    public WebElement shopDetails;
+
 
 }
 
