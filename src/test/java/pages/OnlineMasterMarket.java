@@ -30,6 +30,9 @@ public class OnlineMasterMarket {
     @FindBy(xpath = "//*[@id='login_password']") // Email icin password kutusu
     public WebElement passwordBox;
 
+    @FindBy(xpath = "//button[@name='search']") // homepage search box
+    public WebElement searchBox;
+
     @FindBy(xpath = "//*[@id='emaillogin_submit']") // Email ve password'u onaylamak icin enter butonu
     public WebElement enterButton;
 
