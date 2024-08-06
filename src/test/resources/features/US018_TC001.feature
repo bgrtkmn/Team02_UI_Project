@@ -1,7 +1,7 @@
 
 Feature: As a user I would like to have a page on the site where I can request Repair and Maintenance services
 
-  @wip
+
   Scenario: Repairs & Maintenance should be visible and active in the slider on the homepage
 
     Given User launches the browser

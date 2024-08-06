@@ -1,7 +1,7 @@
 
 Feature: As a registered user I would like to have a page where I can see notifications
 
-  @wip
+
   Scenario: Registered user should be able to clear all notifications with "clear all" button
 
     Given User launches the browser
