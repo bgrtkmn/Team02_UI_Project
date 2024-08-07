@@ -220,6 +220,7 @@ public class ReusableMethods {
         Driver.getDriver().switchTo().window(origin);
     }
 
+
     //===============Thread.sleep Wait==============//
     public static void waitFor(int sec) {
         try {
@@ -339,8 +340,8 @@ public class ReusableMethods {
         actions.moveToElement(element).perform();
 
     }
-  
-  public static void typeKeys(String text, WebElement element) {
+
+    public static void typeKeys(String text, WebElement element) {
         element.clear();
 
         for (String c : text.split("")) {
