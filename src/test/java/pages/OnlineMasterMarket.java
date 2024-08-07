@@ -18,9 +18,6 @@ public class OnlineMasterMarket {
 
     //LOCATE'i ALINAN WEB ELEMENTLERI ICIN ACIKLAYICI YORUM SATIRI YAZINIZ
 
-
-
-
     @FindBy(xpath = "//a[@class='btn btn-signin']")  //Anasayfadaki Login Butonu
     public WebElement mainPageLoginButton;
 
@@ -59,54 +56,5 @@ public class OnlineMasterMarket {
 
     @FindBy(xpath = "//div[1]/div//h4/a")
     public List<WebElement> repairAndMaintenanceServicesList;
-
-
-
-    @FindBy (xpath = "//span[text()='Moving & Transportation']")
-    public WebElement homePageMovingTransportationCard;
-
-
-    @FindBy (xpath = "//li[@class='nav-item active']") //moving&transportation Shops butonu
-    public WebElement movingAndTransportationShopsButon;
-
-    @FindBy (xpath = "//li[@class='nav-item active']") //moving&transportation Service butonu
-    public WebElement movingAndTransportationServiceButon;
-
-    @FindBy (xpath = "//div[@class='row']") //M & T shops listesi
-    public WebElement movingAndTransportationShopslist;
-
-    @FindBy (xpath = "//div[@class='row'][1]") //M & T shops
-    public WebElement movingAndTransportationIlkShop;
-
-
-
-    @FindBy (xpath ="//a[text()='Visit Store ']")
-    public WebElement movingAndTransportationShopslistVisitStoreLink;
-
-
-
-
-
-    @FindBy (xpath ="//a[text()='Become a Professional']") // Header bölümündeki ABecome a Professional Linki
-    public WebElement headerBecomeaProfessionalLink;
-
-
-    @FindBy (xpath ="//a[text()='Become a User']") // Header bölümündeki ABecome a Professional Linki
-    public WebElement headerBecomeaUserlink;
-
-
-    @FindBy (xpath ="//a[text()='About US']") // Header bölümündeki About US Linki
-    public WebElement headerAboutUSLink;
-
-
-    @FindBy (xpath = "//div[@class='inner-tab-shop'][1]") //
-    public WebElement shopsDetail;
-
-    @FindBy (xpath = "//div[@class='card-body']")
-    public WebElement shopAvaibility;
-
-    @FindBy (xpath = "//h2[text()='Services']")
-    public WebElement servicesList;
-
 
 }

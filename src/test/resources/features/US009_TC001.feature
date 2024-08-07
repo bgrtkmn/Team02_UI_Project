@@ -1,4 +1,4 @@
-@wip
+
 Feature: Ziyaretçi verilen görevler üzerinden görünürlük ve fonksiyonların doğru çalışıp çalışmadığını kontrol eder.
 
   Scenario: Ziyaretçi Business Services sayfasındaki görünürlük ve fonksiyonları doğrular.

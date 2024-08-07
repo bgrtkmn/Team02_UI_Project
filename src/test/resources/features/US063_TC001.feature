@@ -1,7 +1,7 @@
 
 Feature: As a registered user (provider) I want to have an area where I can see and manage my coupons
 
-  @wip
+
   Scenario: Staffs link should be visible and active in Provider Dashboard sidebar
 
     Given User launches the browser
