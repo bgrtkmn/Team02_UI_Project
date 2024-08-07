@@ -114,6 +114,9 @@ public class OmmHomepage {
     public WebElement cancelReason;
 
 
+    @FindBy(xpath = "(//*[@class=\"title-set\"])[2]")
+    public WebElement BodyMostPopularServices;
+
 
 
 }
