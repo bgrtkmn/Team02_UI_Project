@@ -7,6 +7,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
@@ -19,6 +20,8 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Set;
+
+import static utilities.Driver.driver;
 
 public class ReusableMethods {
 
@@ -265,18 +268,7 @@ public class ReusableMethods {
         return wait.until(ExpectedConditions.elementToBeClickable(element));
     }
 
-    /**
-     * Waits for element matching the locator to be clickable
-     *
-     * @param locator
-     * @param timeout
-     * @return
-     */
-    public static WebElement waitForClickablility(By locator, int timeout) {
-        //WebDriverWait wait = new WebDriverWait(Driver.get(), timeout);
-        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(timeout));
-        return wait.until(ExpectedConditions.elementToBeClickable(locator));
-    }
+
 
     /**
      * waits for backgrounds processes on the browser to complete
@@ -312,6 +304,23 @@ public class ReusableMethods {
         wait.until(ExpectedConditions.presenceOfElementLocated(by));
 
     }
+
+    public static void scrollToElement(WebElement element) {
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true)", element);
+    }
+
+    public static WebElement waitForClickable(WebElement webElement) {
+
+        WebDriverWait webDriverWait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        webDriverWait.until(ExpectedConditions.elementToBeClickable(webElement));
+
+        return webDriverWait.until(ExpectedConditions.elementToBeClickable(webElement));
+    }
+
+    public static void scrollUpToElement(WebElement element) {
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);", element);
+    }
+
 
 
     public static void selectAnItemFromDropdown(WebElement item, String selectableItem) {
