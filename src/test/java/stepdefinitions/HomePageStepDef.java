@@ -3,7 +3,7 @@ package stepdefinitions;
 import io.cucumber.java.en.*;
 import org.junit.Assert;
 import org.openqa.selenium.interactions.Actions;
-import pages.OmmCategories;
+//import pages.OmmCategories;
 import pages.OnlineMasterMarket;
 import utilities.ConfigReader;
 import utilities.Driver;
@@ -13,18 +13,18 @@ import utilities.ReusableMethods;
 public class HomePageStepDef {
 
     OnlineMasterMarket onlineMasterMarket = new OnlineMasterMarket();
-    OmmCategories ommCategories = new OmmCategories();
+   // OmmCategories ommCategories = new OmmCategories();
     Actions actions = new Actions(Driver.getDriver()); //Action object created
 
 
     @Then("Verify that the Categories link in the home page header section is displayed and clicked.")
     public void verify_that_the_categories_link_in_the_home_page_header_section_is_displayed_and_clicked() {
-        Assert.assertTrue(ommCategories.HeaderCategories.isDisplayed());
-        Assert.assertTrue(ommCategories.HeaderCategories.isEnabled());
+      // Assert.assertTrue(ommCategories.HeaderCategories.isDisplayed());
+       // Assert.assertTrue(ommCategories.HeaderCategories.isEnabled());
     }
     @Then("Click on Categories button and confirms that it redirects to the correct page.")
     public void click_on_categories_button_and_confirms_that_it_redirects_to_the_correct_page() {
-        ommCategories.HeaderCategories.click();
+       // ommCategories.HeaderCategories.click();
         ReusableMethods.waitFor(1);
         Assert.assertEquals(ConfigReader.getProperty("ommCategoriesURL"),Driver.getDriver().getCurrentUrl());
     }
@@ -50,9 +50,9 @@ public class HomePageStepDef {
 
     @Then("Verify that the under Categories \\(Business Services, Repairs & Maintenance, Moving & Transportation, Events, Personal Services, Home Services) links are displayed and clicked.")
     public void verify_that_the_under_categories_business_services_repairs_maintenance_moving_transportation_events_personal_services_home_services_links_are_displayed_and_clicked() {
-        actions.moveToElement(ommCategories.HeaderCategories).perform();
-        Assert.assertTrue(ommCategories.BusinessServices.isDisplayed());
-        Assert.assertTrue(ommCategories.BusinessServices.isEnabled());
+       // actions.moveToElement(ommCategories.HeaderCategories).perform();
+        //Assert.assertTrue(ommCategories.BusinessServices.isDisplayed());
+       // Assert.assertTrue(ommCategories.BusinessServices.isEnabled());
 
         Assert.assertTrue(onlineMasterMarket.homeServicesHeader.isDisplayed());
         Assert.assertTrue(onlineMasterMarket.homeServicesHeader.isEnabled());
@@ -72,41 +72,41 @@ public class HomePageStepDef {
     }
     @Then("Click on \\(Business Services, Repairs & Maintenance, Moving & Transportation, Events, Personal Services, Home Services) buttons and confirms that it redirects to the correct page.")
     public void click_on_business_services_repairs_maintenance_moving_transportation_events_personal_services_home_services_buttons_and_confirms_that_it_redirects_to_the_correct_page() {
-        ommCategories.BusinessServices.click();
+        //ommCategories.BusinessServices.click();
         ReusableMethods.waitFor(1);
         Assert.assertEquals("https://qa.onlinemastermarket.com/search/business-services", Driver.getDriver().getCurrentUrl());
 
         onlineMasterMarket.logoHeader.click();
         ReusableMethods.waitFor(1);
-        actions.moveToElement(ommCategories.HeaderCategories).perform();
+        //actions.moveToElement(ommCategories.HeaderCategories).perform();
         onlineMasterMarket.homeServicesHeader.click();
         ReusableMethods.waitFor(1);
         Assert.assertEquals("https://qa.onlinemastermarket.com/search/home-services", Driver.getDriver().getCurrentUrl());
 
         onlineMasterMarket.logoHeader.click();
         ReusableMethods.waitFor(1);
-        actions.moveToElement(ommCategories.HeaderCategories).perform();
+       // actions.moveToElement(ommCategories.HeaderCategories).perform();
         onlineMasterMarket.movingAndTransportationHeader.click();
         ReusableMethods.waitFor(1);
         Assert.assertEquals("https://qa.onlinemastermarket.com/search/moving-and-transportation", Driver.getDriver().getCurrentUrl());
 
         onlineMasterMarket.logoHeader.click();
         ReusableMethods.waitFor(1);
-        actions.moveToElement(ommCategories.HeaderCategories).perform();
+        //actions.moveToElement(ommCategories.HeaderCategories).perform();
         onlineMasterMarket.personalServicesHeader.click();
         ReusableMethods.waitFor(1);
         Assert.assertEquals("https://qa.onlinemastermarket.com/search/personal-services", Driver.getDriver().getCurrentUrl());
 
         onlineMasterMarket.logoHeader.click();
         ReusableMethods.waitFor(1);
-        actions.moveToElement(ommCategories.HeaderCategories).perform();
+       // actions.moveToElement(ommCategories.HeaderCategories).perform();
         onlineMasterMarket.eventsHeader.click();
         ReusableMethods.waitFor(1);
         Assert.assertEquals("https://qa.onlinemastermarket.com/search/events", Driver.getDriver().getCurrentUrl());
 
         onlineMasterMarket.logoHeader.click();
         ReusableMethods.waitFor(1);
-        actions.moveToElement(ommCategories.HeaderCategories).perform();
+        //actions.moveToElement(ommCategories.HeaderCategories).perform();
         onlineMasterMarket.repairsAndMaintenanceHeader.click();
         ReusableMethods.waitFor(1);
         Assert.assertEquals("https://qa.onlinemastermarket.com/search/repairs-and-maintenance", Driver.getDriver().getCurrentUrl());

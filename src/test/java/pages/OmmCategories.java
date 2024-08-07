@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -35,6 +36,7 @@ public class OmmCategories{
     @FindBy(xpath = "(//*[@class='feather-arrow-right'])[1]") // Header > Category > Business Services > ilk şirket kartındaki visit store ikonu
     public WebElement VisitStoreIcon ;
 
-
+    @FindBy(xpath = "/html/body/div[1]/header/nav/div[2]/ul/li[2]/ul/li[2]/a") // Header -> Categories -> Repairs&Maintenance
+    public static WebElement categoriesRepairAndMaintenance;
 
 }
