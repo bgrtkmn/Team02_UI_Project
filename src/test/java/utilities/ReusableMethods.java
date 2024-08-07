@@ -202,19 +202,7 @@ public class ReusableMethods {
         FileUtils.copyFile(source, finalDestination);
         return target;
     }
-
-    public static void typeKeys(String text, WebElement element) {
-        element.clear();
-
-        for (String c : text.split("")) {
-            element.sendKeys(c);
-            try {
-                Thread.sleep(50);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
-        }
-    }
+    
 }
 
 
