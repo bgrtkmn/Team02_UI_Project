@@ -62,64 +62,6 @@ public class OnlineMasterMarket {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     @FindBy (xpath = "//span[text()='Moving & Transportation']")
     public WebElement homePageMovingTransportationCard;
 
@@ -155,7 +97,6 @@ public class OnlineMasterMarket {
 
     @FindBy (xpath ="//a[text()='About US']") // Header bölümündeki About US Linki
     public WebElement headerAboutUSLink;
-
 
 
     @FindBy (xpath = "//div[@class='inner-tab-shop'][1]") //
