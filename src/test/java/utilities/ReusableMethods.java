@@ -25,7 +25,7 @@ import static utilities.Driver.driver;
 
 public class ReusableMethods {
 
-    public static void bekle(int saniye){
+    public static void bekle(int saniye) {
 
         try {
             Thread.sleep(saniye * 1000);
@@ -35,12 +35,12 @@ public class ReusableMethods {
 
     }
 
-    public static List<String> stringListeDonustur(List<WebElement> webElementList){
+    public static List<String> stringListeDonustur(List<WebElement> webElementList) {
 
         List<String> donusturulenList = new ArrayList<>();
 
         for (WebElement eachElement : webElementList
-             ) {
+        ) {
 
             donusturulenList.add(eachElement.getText());
         }
@@ -49,7 +49,7 @@ public class ReusableMethods {
         return donusturulenList;
     }
 
-    public static void switchWindow(String hedefUrl){
+    public static void switchWindow(String hedefUrl) {
 
         // birden fazla window acik iken bu method calisacak
 
@@ -62,11 +62,11 @@ public class ReusableMethods {
         //    loop'u bitirelim
 
         for (String eachWHD : tumWHDSeti
-             ) {
+        ) {
 
             Driver.getDriver().switchTo().window(eachWHD);
 
-            if (Driver.getDriver().getCurrentUrl().equals(hedefUrl)){
+            if (Driver.getDriver().getCurrentUrl().equals(hedefUrl)) {
                 break;
             }
 
@@ -74,7 +74,7 @@ public class ReusableMethods {
 
     }
 
-    public static void tumSayfaScreenshot(WebDriver driver){
+    public static void tumSayfaScreenshot(WebDriver driver) {
 
         // 1- takesScreenshot objesi olusturalim
         TakesScreenshot tss = (TakesScreenshot) driver;
@@ -90,7 +90,7 @@ public class ReusableMethods {
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("YYMMddHHmmss");
         String tarihDamgasi = ldt.format(dtf); // 240402123223
 
-        kaydedilecekDosyaYolu = "target/screenshots/tumSayfaSS"+tarihDamgasi+".jpeg";
+        kaydedilecekDosyaYolu = "target/screenshots/tumSayfaSS" + tarihDamgasi + ".jpeg";
 
         File tumSayfaScreenshot = new File(kaydedilecekDosyaYolu);
 
@@ -101,14 +101,14 @@ public class ReusableMethods {
         // 4- gecici dosyayi, asil kaydetmek istedigimiz dosyaya kopyalayalim
 
         try {
-            org.apache.commons.io.FileUtils.copyFile(geciciDosya,tumSayfaScreenshot);
+            org.apache.commons.io.FileUtils.copyFile(geciciDosya, tumSayfaScreenshot);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
 
     }
 
-    public static void tumSayfaScreenshot(WebDriver driver,String raporIsmi){
+    public static void tumSayfaScreenshot(WebDriver driver, String raporIsmi) {
 
         // 1- takesScreenshot objesi olusturalim
         TakesScreenshot tss = (TakesScreenshot) driver;
@@ -124,7 +124,7 @@ public class ReusableMethods {
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("YYMMddHHmmss");
         String tarihDamgasi = ldt.format(dtf); // 240402123223
 
-        kaydedilecekDosyaYolu = "target/screenshots/"+raporIsmi+tarihDamgasi+".jpeg";
+        kaydedilecekDosyaYolu = "target/screenshots/" + raporIsmi + tarihDamgasi + ".jpeg";
 
         File tumSayfaScreenshot = new File(kaydedilecekDosyaYolu);
 
@@ -135,20 +135,20 @@ public class ReusableMethods {
         // 4- gecici dosyayi, asil kaydetmek istedigimiz dosyaya kopyalayalim
 
         try {
-            org.apache.commons.io.FileUtils.copyFile(geciciDosya,tumSayfaScreenshot);
+            org.apache.commons.io.FileUtils.copyFile(geciciDosya, tumSayfaScreenshot);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
 
     }
 
-    public static void webelementScreenshot(WebElement istenenElement){
+    public static void webelementScreenshot(WebElement istenenElement) {
 
         LocalDateTime ldt = LocalDateTime.now();
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("YYMMddHHmmss");
         String tarihDamgasi = ldt.format(dtf); // 240402123223
 
-        String kaydedilecekDosyaYolu = "target/screenshots/webelementSS"+tarihDamgasi+".jpeg";
+        String kaydedilecekDosyaYolu = "target/screenshots/webelementSS" + tarihDamgasi + ".jpeg";
 
         // 1- screenshot alinacak webelemnti locate edip kaydedelim
 
@@ -163,18 +163,18 @@ public class ReusableMethods {
         // 4- gecici dosyayi ana dosyaya kopyalayalim
 
         try {
-            org.apache.commons.io.FileUtils.copyFile(geciciDosya,webelementSS);
+            org.apache.commons.io.FileUtils.copyFile(geciciDosya, webelementSS);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }
 
-    public static void webelementScreenshot(WebElement istenenElement,String raporIsmi){
+    public static void webelementScreenshot(WebElement istenenElement, String raporIsmi) {
         LocalDateTime ldt = LocalDateTime.now();
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("YYMMddHHmmss");
         String tarihDamgasi = ldt.format(dtf); // 240402123223
 
-        String kaydedilecekDosyaYolu = "target/screenshots/"+raporIsmi+tarihDamgasi+".jpeg";
+        String kaydedilecekDosyaYolu = "target/screenshots/" + raporIsmi + tarihDamgasi + ".jpeg";
 
         // 1- screenshot alinacak webelemnti locate edip kaydedelim
 
@@ -189,7 +189,7 @@ public class ReusableMethods {
         // 4- gecici dosyayi ana dosyaya kopyalayalim
 
         try {
-            org.apache.commons.io.FileUtils.copyFile(geciciDosya,webelementSS);
+            org.apache.commons.io.FileUtils.copyFile(geciciDosya, webelementSS);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -339,4 +339,21 @@ public class ReusableMethods {
         actions.moveToElement(element).perform();
 
     }
+  
+  public static void typeKeys(String text, WebElement element) {
+        element.clear();
+
+        for (String c : text.split("")) {
+            element.sendKeys(c);
+            try {
+                Thread.sleep(50);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        }
+    }
+
 }
+
+
+

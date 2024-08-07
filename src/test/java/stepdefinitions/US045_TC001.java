@@ -5,6 +5,7 @@ import org.openqa.selenium.Keys;
 import pages.OmmHomepage;
 
 import static utilities.ReusableMethods.bekle;
+import static utilities.ReusableMethods.typeKeys;
 
 public class US045_TC001 {
 
@@ -17,7 +18,7 @@ public class US045_TC001 {
 
     @Given("e mail id i girilir")
     public void e_mail_id_i_girilir() {
-        ommHomepage.loginId.sendKeys("mrasitcelik.user@ommarket.com");
+        typeKeys("mrasitcelik.user@ommarket.com", ommHomepage.loginId);
         ommHomepage.enterBtn.click();
     }
 
