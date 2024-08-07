@@ -4,6 +4,8 @@ import io.cucumber.java.en.Given;
 import org.openqa.selenium.Keys;
 import pages.OmmHomepage;
 
+import static utilities.ReusableMethods.bekle;
+
 public class US045_TC001 {
 
     OmmHomepage ommHomepage = new OmmHomepage();
@@ -15,15 +17,14 @@ public class US045_TC001 {
 
     @Given("e mail id i girilir")
     public void e_mail_id_i_girilir() {
-       ommHomepage.loginId.sendKeys("mrasitcelik.user@ommarket.com");
-
-       ommHomepage.enterBtn.click();
+        ommHomepage.loginId.sendKeys("mrasitcelik.user@ommarket.com");
+        ommHomepage.enterBtn.click();
     }
 
     @Given("password girilir")
     public void password_girilir() {
         ommHomepage.password.sendKeys("Ommarket.2607");
-        ommHomepage.enterBtn.click();
+        ommHomepage.enterBtnPassword.click();
     }
 
     @Given("profil ikonuna tiklanir")
@@ -33,7 +34,7 @@ public class US045_TC001 {
 
     @Given("logout linkine tiklanir")
     public void logout_linkine_tiklanir() {
-       ommHomepage.logoutBtn.click();
+        ommHomepage.logoutBtn.click();
     }
 
 }

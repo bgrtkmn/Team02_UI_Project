@@ -80,5 +80,9 @@ public class OmmHomepage {
     @FindBy(xpath = "//*[@id=\"emaillogin_submit\"]")
     public WebElement enterBtn;
 
+    @FindBy(xpath = "//*[@id=\"emailregistration_finals\"]")
+    public WebElement enterBtnPassword;
+
+
 }
 
