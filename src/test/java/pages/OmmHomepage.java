@@ -83,6 +83,38 @@ public class OmmHomepage {
     @FindBy(xpath = "//*[@id=\"emailregistration_finals\"]")
     public WebElement enterBtnPassword;
 
+    @FindBy(xpath = "/html/body/div[1]/header/nav/ul/li[4]/div/a[1]")
+    public WebElement profilDashboard;
+
+    @FindBy(xpath = "/html/body/div[1]/div[3]/div/div/div[1]/div/div[1]/div[2]/ul/li[5]/a")
+    public WebElement providerDashboardOrderList;
+
+    @FindBy(xpath = "//*[@id=\"select2-delivery_status-container\"]")
+    public WebElement OrderListFiltreleme;
+
+    @FindBy(xpath = "//*[@id=\"ol_103\"]/div/div[2]/a[1]")
+    public WebElement acceptOrder;
+
+    @FindBy(xpath = "//*[@id=\"ol_103\"]/div/div[2]/a[1]")
+    public WebElement cancelOrder;
+
+    @FindBy(xpath = "//*[@id=\"ol_101\"]/div/div[2]/a[2]")
+    public WebElement changeToShipping;
+
+    @FindBy(xpath = "//*[@id=\"ol_101\"]/div/div[2]/a[3]")
+    public WebElement outOfDelivery;
+
+    @FindBy(xpath = "//*[@id=\"ol_101\"]/div/div[2]/a[4]")
+    public WebElement delivered;
+
+    @FindBy(xpath = "//*[@id=\"order_cancel_pop\"]/div/div/div[3]/button[1]")
+    public WebElement cancelYes;
+
+    @FindBy(xpath = "//*[@id=\"cancel_reason\"]")
+    public WebElement cancelReason;
+
+
+
 
 }
 
