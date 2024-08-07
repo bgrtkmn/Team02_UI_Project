@@ -24,11 +24,12 @@ public class US015_TC001 {
     public void adresine_gider() {
         Driver.getDriver().get(ConfigReader.getProperty("ommURL"));
 
-        actions.sendKeys(Keys.PAGE_DOWN).perform();
+
 
     }
     @Then("personel services basligi gorunur")
     public void personel_services_basligi_gorunur() {
+        actions.sendKeys(Keys.PAGE_DOWN).perform();
 
         Assert.assertTrue(ommHomepage.PersonelServices.isDisplayed());
     }
