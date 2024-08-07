@@ -80,10 +80,11 @@ public class OnlineMasterMarket {
     public WebElement logoHeader;
 
 
+    @FindBy(xpath = "(//*[@*='feather-arrow-right'])[3]") // Homepage - Featured Shop - Arrow
+    public WebElement featuredShopArrow;
 
-
-
-
+    @FindBy(xpath = "(//*[@*='btn btn-viewall'])[1]") // Homepage - Featured Shop - View All
+    public WebElement featuredShopViewAll;
 
     @FindBy(xpath = "(//*[@*='card-body'])[1]") // Categories Page homeServices Card body
     public WebElement homeServicesCardBody;
