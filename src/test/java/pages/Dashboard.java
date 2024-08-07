@@ -17,8 +17,7 @@ public class Dashboard{
 
     //LOCATE'i ALINAN WEB ELEMENTLERI ICIN ACIKLAYICI YORUM SATIRI YAZINIZ
 
-
-
+    
 
 
 }

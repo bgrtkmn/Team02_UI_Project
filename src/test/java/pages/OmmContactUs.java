@@ -16,7 +16,13 @@ public class OmmContactUs{
 
     //LOCATE'i ALINAN WEB ELEMENTLERI ICIN ACIKLAYICI YORUM SATIRI YAZINIZ
 
-    
+
+
+
+    @FindBy (xpath ="//a[text()='Contact US']") // Header bölümündeki Contact Us Linki
+    public WebElement headerContactUSLink;
+
+
 
 
 }

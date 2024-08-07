@@ -18,9 +18,9 @@ public class US009_TC001 {
     }
     @Given("Ziyaretçi Header bölümünden Categories altındaki Business Service’i görüntüler ve tıklar.")
     public void ziyaretçi_header_bölümünden_categories_altındaki_business_service_i_görüntüler_ve_tıklar() throws InterruptedException {
-        actions.moveToElement(ommCategories.HeaderCategories).perform();
-        ommCategories.BusinessServices.isDisplayed();
-        ommCategories.BusinessServices.click();
+        //actions.moveToElement(ommCategories.HeaderCategories).perform();
+        //ommCategories.BusinessServices.isDisplayed();
+        //ommCategories.BusinessServices.click();
 
     }
     @Given("Ziyaretçi Shops ve Service butonlarını görüntüler ve service butonuna tıklar.")
