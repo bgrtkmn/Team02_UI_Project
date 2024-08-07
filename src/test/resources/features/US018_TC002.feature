@@ -1,7 +1,7 @@
 
 Feature: As a user I would like to have a page on the site where I can request Repair and Maintenance services
 
-  @wip
+
   Scenario: From Repairs & Maintenance menu user can move to related links written visit store below
 
     Given User launches the browser
