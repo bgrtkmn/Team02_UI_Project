@@ -64,6 +64,12 @@ public class OnlineMasterMarket {
     @FindBy(xpath = "(//*[text()='Repairs & Maintenance'])[1]") // Header > Category > Repairs & Maintenance
     public WebElement repairsAndMaintenanceHeader;
 
+    @FindBy(xpath =" /html/body/div[1]/div/div[1]/div[1]/div/div[1]/ul/li[1]") //Header> Category > Repairs & Maintenance > Shops
+    public WebElement shopselement;
+
+    @FindBy(xpath = "/html/body/div[1]/div/div[1]/div[1]/div/div[1]/ul/li[2]") //Header> Category > Repairs & Maintenance > Service
+    public WebElement serviceelement;
+
     @FindBy(xpath = "(//*[text()='Moving & Transportation'])[1]") // Header > Category > Moving & Transportation
     public WebElement movingAndTransportationHeader;
 
