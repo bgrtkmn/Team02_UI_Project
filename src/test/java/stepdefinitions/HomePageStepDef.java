@@ -181,6 +181,31 @@ public class HomePageStepDef {
         ReusableMethods.waitFor(1);
         Assert.assertEquals(ConfigReader.getProperty("ommURL"),Driver.getDriver().getCurrentUrl());
     }
+    @Then("Verify that the Featured Shop title in the home body section is displayed.")
+    public void verify_that_the_featured_shop_title_in_the_home_body_section_is_displayed() {
+        Assert.assertTrue(onlineMasterMarket.getLocateWithText("Featured Shop").isDisplayed());
+    }
 
+    @Then("Verify that the Company name, location information are displayed.")
+    public void verify_that_the_company_name_location_information_are_displayed() {
+        actions.moveToElement(onlineMasterMarket.getLocateWithText("Horizon Movers")).perform();
+        ReusableMethods.waitFor(1);
+        Assert.assertTrue(onlineMasterMarket.getLocateWithText("Horizon Movers").isDisplayed());
+        Assert.assertTrue(onlineMasterMarket.getLocateWithText("Edmond, Oklahoma").isDisplayed());
+
+    }
+    @Then("Click on Visit store icon button and confirm that it redirect to the correct page.")
+    public void click_on_visit_store_icon_button_and_confirm_that_it_redirect_to_the_correct_page() {
+        onlineMasterMarket.featuredShopArrow.click();
+        ReusableMethods.waitFor(1);
+        Assert.assertEquals("https://qa.onlinemastermarket.com/shop-preview/horizon-movers?sid=aab3238922bcc25a6f606eb525ffdc56",Driver.getDriver().getCurrentUrl());
+    }
+
+    @Then("Click on View All icon under the title button and confirm that it redirect to the correct page.")
+    public void click_on_view_all_icon_under_the_title_button_and_confirm_that_it_redirect_to_the_correct_page() {
+        onlineMasterMarket.featuredShopViewAll.click();
+        ReusableMethods.waitFor(1);
+        Assert.assertEquals("https://qa.onlinemastermarket.com/all-services",Driver.getDriver().getCurrentUrl());
+    }
 
 }
