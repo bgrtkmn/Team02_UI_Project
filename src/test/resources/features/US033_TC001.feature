@@ -1,7 +1,7 @@
 
 Feature: As a registered user I want to be able to perform membership-related transactions on my Dashboard panel
 
-  @wip
+
   Scenario: Registered should user should be able to change subscription plan from the menu
 
     Given User launches the browser
@@ -11,5 +11,5 @@ Feature: As a registered user I want to be able to perform membership-related tr
     And User enters own password and clicks enter
     Then User clicks on the profile icon in the Header menu
     And User clicks on dashboard from DropDown menu
-    And User clicks on subcriptions from the opened page
+    And User clicks on subcsriptions from the opened page
     Then User selects from the payment plans in the pop-up window and sees Subscribed

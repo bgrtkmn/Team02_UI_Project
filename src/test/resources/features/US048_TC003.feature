@@ -1,7 +1,7 @@
 
 Feature: As a registered user I would like to have a page where I can see notifications
 
-  @wip
+
   Scenario: Registered user access to all notifications webpage from notifications icon and deletes desired notifications
 
     Given User launches the browser

@@ -1,9 +1,8 @@
 
 Feature: As a registered user I would like to have a page where I can see notifications
 
-  @wip
-  Scenario: Registered interacts with notifications icon and directed to all notifications webpage
 
+  Scenario: Registered interacts with notifications icon and directed to all notifications webpage
 
     Given User launches the browser
     And User goes to the homepage
