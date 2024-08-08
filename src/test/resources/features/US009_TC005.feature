@@ -1,7 +1,7 @@
 
-Feature: Ziyaretçi verilen görevler üzerinden görünürlük ve fonksiyonların doğru çalışıp çalışmadığını kontrol eder.
+Feature: Business Services linkinde bulunan Service bölümündeki filtreleme ikonunun görünürlüğü ve filtreleme fonksiyonunun düzgün çalıştığını test etme.
 
-  Scenario: Ziyaretçi Business Services sayfasındaki görünürlük ve fonksiyonları doğrular.
+  Scenario: Ziyaretçi BusinessServices sayfasındaki Service altındaki Filtreleme fonksiyonlarını test eder.
 
 
     * Ziyaretçi URL’e gider.
