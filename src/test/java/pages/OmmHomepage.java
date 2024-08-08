@@ -119,5 +119,14 @@ public class OmmHomepage {
 
 
 
+    @FindBy(xpath = "(//*[text()=\"Full-Service Catering (per person)\"])[1]") // Body > Popular Services > Full Service Catering text başlık
+    public WebElement BodyMostPopularServicesIlkSirketTextBaslik;
+
+
+    @FindBy(xpath = "(//*[@class=\"btn btn-viewall\"])[2]") // Body MostPopular Services  View All butonu
+    public WebElement BodyMostPopularViewAllButton;
+
+
+
 }
 

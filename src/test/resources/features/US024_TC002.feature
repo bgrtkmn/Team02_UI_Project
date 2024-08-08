@@ -1,6 +1,6 @@
-Feature: Ziyaretçi verilen görevler üzerinden görünürlük ve fonksiyonların doğru çalışıp çalışmadığını kontrol eder.
+Feature: ZAnasayfa body bölümünde Most Popular Services başlığının altındaki View All ikonun görünürlük ve fonksiyonlarının aktif olduğunu test etme.
 
-  Scenario: Ziyaretçi Business Services sayfasındaki görünürlük ve fonksiyonları doğrular.
+  Scenario: Ziyaretçi Body Bölümündeki Most Popular Services'in altındaki kartları, başlığı ve view all butonun fonksiyonlarını doğrular.
 
 
 
