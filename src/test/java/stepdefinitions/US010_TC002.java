@@ -24,6 +24,7 @@ public class US010_TC002 {
     @When("I locate the 'Categories' menu in the header")
     public void ı_locate_the_menu_in_the_header() throws InterruptedException {
         actions.moveToElement(onlineMasterMarket.headerMenuCategories);
+        onlineMasterMarket.headerMenuCategories.click();
         Thread.sleep(1000);
     }
 
