@@ -22,6 +22,7 @@ public class RepairsAndMaintenance {
     @FindBy(xpath = "//*[@id='filter_search']")// Repairs&Maintenance -> filter
     public WebElement filterElement;
 
+
     @FindBy(xpath = "//*[@id='shops-tab']") // Repairs&Maintenance -> Shops
     public WebElement Shops;
 
@@ -43,5 +44,14 @@ public class RepairsAndMaintenance {
     @FindBy(xpath = "//div[1]/div/div[2]/div/div/div[2]/div[2]/div//h4/a")
     public List<WebElement> servicesList; // Maintenance & Repair -> Services as a List
 
+    @FindBy(xpath = "/html/body/div[1]/header/nav/div[2]/ul/li[2]")
+    public WebElement headerMenuCategories;
+
+
+    @FindBy(xpath = "/html/body/div[1]/header/nav/div[2]/ul/li[2]/ul/li[2]/a") // Header -> Categories -> Repairs&Maintenance
+    public WebElement categoriesRepairAndMaintenance;
+
+    @FindBy(xpath = "(//*[text()='Repairs & Maintenance'])[1]") // Header > Category > Repairs & Maintenance
+    public WebElement repairsAndMaintenanceHeader;
 
 }
