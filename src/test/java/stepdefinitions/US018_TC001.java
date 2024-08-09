@@ -25,7 +25,8 @@ public class US018_TC001 {
     OnlineMasterMarket onlineMasterMarket = new OnlineMasterMarket(); //Page object created
     Actions actions = new Actions(Driver.getDriver()); //Action object created
 
-    @Given("User2 launches the browser")
+    /*
+    @Given("User launches the browser")
     public void user_launches_the_browser() {
 
         //No code is required in this field
@@ -36,8 +37,9 @@ public class US018_TC001 {
 
         Driver.getDriver().get(ConfigReader.getProperty("ommURL")); //Driver visits the webpage
 
-    }
-    @And("User tests that Repairs & Maintenance is visible in the header menu")
+    */
+
+    @And("user tests that Repairs & Maintenance is visible in the header menu")
     public void user_tests_that_repairs_maintenance_is_visible_in_the_header_menu() {
 
         actions.moveToElement(onlineMasterMarket.headerMenuCategories).perform(); //Mouse hovers categories in header menu
@@ -46,7 +48,7 @@ public class US018_TC001 {
 
 
     }
-    @And("User goes to the Repairs & Maintenance page and tests that the shops and services buttons are visible and clickable")
+    @And("user goes to the Repairs & Maintenance page and tests that the shops and services buttons are visible and clickable")
     public void user_goes_to_the_repairs_maintenance_page_and_tests_that_the_shops_and_services_buttons_are_visible_and_clickable() {
 
         ReusableMethods.bekle(1); //Driver waits for 1 second
@@ -63,14 +65,14 @@ public class US018_TC001 {
 
 
     }
-    @And("User tests that the filter buttons are visible on the Repairs & Maintenance page")
+    @And("user tests that the filter buttons are visible on the Repairs & Maintenance page")
     public void user_tests_that_the_filter_buttons_are_visible_on_the_repairs_maintenance_page() {
 
         ReusableMethods.bekle(1); //Driver waits for 1 second
         Assert.assertTrue(onlineMasterMarket.filterElement.isEnabled()); //Asserts that filter icon is clickable
 
     }
-    @Then("User should be able to view the services on the Repairs & Maintenance page and be redirected to the relevant page")
+    @Then("user should be able to view the services on the Repairs & Maintenance page and be redirected to the relevant page")
     public void user_should_be_able_to_view_the_services_on_the_repairs_maintenance_page_and_be_redirected_to_the_relevant_page() {
 
         ReusableMethods.bekle(1); //Driver waits for 1 second

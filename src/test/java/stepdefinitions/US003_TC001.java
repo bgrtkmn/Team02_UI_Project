@@ -23,25 +23,28 @@ public class US003_TC001 {
     OnlineMasterMarket onlineMasterMarket = new OnlineMasterMarket(); //Page Object created
     Actions actions = new Actions(Driver.getDriver());  //Actions object created
 
-    @Given("user1 launches the browser")
+    /*
+    @Given("user launches the browser")
     public void user_launches_the_browser() {
 
         //No code required in this field.
 
     }
-    @Given("user1 goes to homepage")
+    @Given("user goes to homepage")
     public void user_goes_to_homepage() {
 
         Driver.getDriver().get(ConfigReader.getProperty("ommURL")); //Driver visits desired webpage
         ReusableMethods.bekle(1); //Driver waits for 1 second
 
     }
+
     @Given("user tests that the search engine is visible")
     public void user_tests_that_the_search_engine_is_visible() {
 
         Assert.assertTrue(onlineMasterMarket.searchBar.isDisplayed()); //Driver tests that main page has search bar and visible
 
     }
+    */
     @Given("user tests that the quick service links on the homepage are visible")
     public void user_tests_that_the_quick_service_links_on_the_homepage_are_visible() {
 

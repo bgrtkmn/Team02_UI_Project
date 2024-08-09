@@ -28,7 +28,8 @@ public class US018_TC002 {
     RepairsAndMaintenance repairsAndMaintenance = new RepairsAndMaintenance(); // repairs and maintenance object created
     Actions actions = new Actions(Driver.getDriver()); // actions object created
 
-    @Given("user3 launches the browser")
+    /*
+    @Given("user launches the browser")
     public void user_launches_the_browser() {
 
         ReusableMethods.bekle(1); //Driver Waits 1 second
@@ -40,8 +41,8 @@ public class US018_TC002 {
         Driver.getDriver().get(ConfigReader.getProperty("ommURL")); //Driver visits desired webpage
         ReusableMethods.bekle(1); //Driver Waits 1 second
 
-    }
-    @And("User clicks on Repairs & Maintenance in the Categories DD menu from the Header menu and selects the Shops Button")
+    */
+    @And("user clicks on Repairs & Maintenance in the Categories DD menu from the Header menu and selects the Shops Button")
     public void user_clicks_on_repairs_maintenance_in_the_categories_dd_menu_from_the_header_menu_and_selects_the_shops_button() {
 
         actions.moveToElement(onlineMasterMarket.headerMenuCategories).perform(); //Mouse hovers to categoriesMenu in header
@@ -52,7 +53,7 @@ public class US018_TC002 {
 
     }
 
-    @And("User tests that the options on the screen have the text visit store")
+    @And("user tests that the options on the screen have the text visit store")
     public void user_tests_that_the_options_on_the_screen_have_the_text_visit_store() {
 
         ReusableMethods.bekle(1); //Driver Waits 1 second

@@ -27,6 +27,7 @@ public class US048_TC003 {
 
     OnlineMasterMarket onlineMasterMarket = new OnlineMasterMarket();
 
+    /*
     @Given("User launches the browser")
     public void user_launches_the_browser() {
 
@@ -60,13 +61,16 @@ public class US048_TC003 {
         onlineMasterMarket.passwordLogin.click(); //Driver clicks on the login button
 
     }
-    @And("User sees the notifications icon in the Header menu and tests that it is clickable")
+
+
+    @And("user sees the notifications icon in the Header menu and tests that it is clickable")
     public void user_sees_the_notifications_icon_in_the_header_menu_and_tests_that_it_is_clickable() {
 
         Assert.assertTrue(onlineMasterMarket.notificationIcon.isDisplayed()); //Asserts that notification icon is visible
         Assert.assertTrue(onlineMasterMarket.notificationIcon.isEnabled()); //Asserts that notification icon is clickable
 
     }
+    */
     @And("by clicking on the Notifications menu, the DropDown menu opens and by clicking on View all Notifications, the user goes to the relevant page and tests that all notifications have been deleted by pressing the delete all button")
     public void byClickingOnTheNotificationsMenuTheDropDownMenuOpensAndByClickingOnViewAllNotificationsTheUserGoesToTheRelevantPageAndTestsThatAllNotificationsHaveBeenDeletedByPressingTheDeleteAllButton() {
 
@@ -77,7 +81,7 @@ public class US048_TC003 {
         Assert.assertEquals(0, numberOfNotifications); //Asserts that number of notifications equals to zero
 
     }
-    @Then("User then tests that the notification has been deleted by clicking on the button box from the Notifications page and tests that the current page can be redirected to the home page")
+    @Then("user then tests that the notification has been deleted by clicking on the button box from the Notifications page and tests that the current page can be redirected to the home page")
     public void userThenTestsThatTheNotificationHasBeenDeletedByClickingOnTheButtonBoxFromTheNotificationsPageAndTestsThatTheCurrentPageCanBeRedirectedToTheHomePage() {
 
         int numberOfNotificationOfAllPages = 0; // current notification number is zero. Will be incremented with each iteration

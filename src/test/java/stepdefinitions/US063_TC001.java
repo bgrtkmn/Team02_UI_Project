@@ -26,6 +26,7 @@ public class US063_TC001 {
 
     OnlineMasterMarket onlineMasterMarket = new OnlineMasterMarket();
 
+    /*
     @Given("User launches the browser")
     public void user_launches_the_browser() {
 
@@ -59,26 +60,28 @@ public class US063_TC001 {
         onlineMasterMarket.passwordLogin.click(); //Driver clicks on the login button
 
     }
+    */
+
     @Then("click on the profile icon in the User Header menu")
     public void clickOnTheProfileIconInTheUserHeaderMenu() {
 
         onlineMasterMarket.profileIconButton.click(); //Driver clicks on the profile icon
 
     }
-    @And("User selects dashboard from the DropDown menu in the header and selects the coupons element on the left of the page that opens")
+    @And("user selects dashboard from the DropDown menu in the header and selects the coupons element on the left of the page that opens")
     public void userSelectsDashboardFromTheDropDownMenuInTheHeaderAndSelectsTheCouponsElementOnTheLeftOfThePageThatOpens() {
 
         onlineMasterMarket.profileButtonDashboard.click(); //Driver clicks on the dashboard webelement
 
     }
-    @And("User tests that the View coupon history web element is visible from the menu that appears")
+    @And("user tests that the View coupon history web element is visible from the menu that appears")
     public void userTestsThatTheViewCouponHistoryWebElementIsVisibleFromTheMenuThatAppears() {
 
         //Can not be proceeded due to an error
         //Assert.assertTrue(onlineMasterMarket);
 
     }
-    @Then("User tests that the add coupon web element is viewable and clickable to add a new coupon")
+    @Then("user tests that the add coupon web element is viewable and clickable to add a new coupon")
     public void userTestsThatTheAddCouponWebElementIsViewableAndClickableToAddANewCoupon() {
 
         //Cannot be proceeded due to an error
