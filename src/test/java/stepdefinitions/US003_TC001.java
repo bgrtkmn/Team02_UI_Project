@@ -56,10 +56,10 @@ public class US003_TC001 {
             ReusableMethods.bekle(1); //Driver waits for 1 second
             Assert.assertTrue(onlineMasterMarket.quickServicesList.get(i).isDisplayed()); //Asserts that quick service list Element is displayed
             if (count == 4 ){
-                onlineMasterMarket.popularServicesSliderList.get(1).click(); //Drivers moves to the second element of quick services list
+                onlineMasterMarket.popularServicesSliderList.get(6).click(); //Drivers moves to the second element of quick services list
             }
             if (count == 8) {
-                onlineMasterMarket.popularServicesSliderList.get(2).click(); //Drivers moves to the second element of quick services list
+                onlineMasterMarket.popularServicesSliderList.get(7).click(); //Drivers moves to the second element of quick services list
             }
             count++;
         }

@@ -75,7 +75,7 @@ public class OnlineMasterMarket {
     @FindBy(xpath = "//*[@id='search-blk']") // Homepage Searchbar
     public WebElement searchBar;
 
-    @FindBy(xpath = "//*[@*='//section[4]//div/div[2]/h4/a']") // Homepage Most Popular Services
+    @FindBy(xpath = "(//div[@class='owl-stage-outer'])[2]") // Homepage Most Popular Services
     public List<WebElement> quickServicesList;
 
     @FindBy(xpath = "/html/body/div[1]/header/nav/div[2]/ul/li[2]")
@@ -99,7 +99,7 @@ public class OnlineMasterMarket {
     @FindBy(xpath = "//div[1]/div//h4/a")
     public List<WebElement> repairAndMaintenanceServicesList; //main page -> categories -> services and maintenance -> -services -> Services List
 
-    @FindBy(xpath = "/html/body/div[1]/section[4]/div/div[2]/div[1]/div/div/div[3]/button")
+    @FindBy(xpath = "(//button[@role='button'])")
     public List<WebElement> popularServicesSliderList; //Main page Popular services list slider
 
     @FindBy(xpath = "/html/body/div[1]/header/nav/div[2]/ul/li[2]/ul/li[2]/a")
