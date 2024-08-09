@@ -1,7 +1,7 @@
 
-Feature: Ziyaretçi verilen görevler üzerinden görünürlük ve fonksiyonların doğru çalışıp çalışmadığını kontrol eder.
+Feature: Herhangi bir hizmet sayfasına gidildiğinde Amount, Service Provider, Service Availability, Service Details, Additional Services, Reviews ve Related Services Bölümlerinin Görünürlüğünün testi.
 
-  Scenario: Ziyaretçi Business Services sayfasındaki görünürlük ve fonksiyonları doğrular.
+  Scenario: Ziyaretçi hizmet sayfasındaki görüntülenmelerini ve aktifliklerini test eder.
 
 
     * Ziyaretçi URL’e gider.

@@ -1,7 +1,7 @@
 
-Feature: Ziyaretçi verilen görevler üzerinden görünürlük ve fonksiyonların doğru çalışıp çalışmadığını kontrol eder.
+Feature: Ziyaretçi olarak Sirket sayfasının görüntülenmesi ve aktifliği test edilir.
 
-  Scenario: Ziyaretçi Business Services sayfasındaki görünürlük ve fonksiyonları doğrular.
+  Scenario: Ziyaretçi Business Services  altındaki bir şirketin sayfasındaki görüntülenmelerini ve aktifliklerini test eder.
 
     * Ziyaretçi URL’e gider.
     * Ziyaretçi Header bölümünden Categories altındaki Business Service’i görüntüler ve tıklar.

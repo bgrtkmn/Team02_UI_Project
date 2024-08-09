@@ -20,6 +20,13 @@ public class RepairsAndMaintenance {
     @FindBy(xpath = "//*[@id='filter_search']")// Repairs&Maintenance -> filter
     public WebElement filterElement;
 
+    @FindBy(xpath = "/html/body/div[1]/header/nav/div[2]/ul/li[2]")
+    public WebElement headerMenuCategories;
 
+    @FindBy(xpath = "/html/body/div[1]/header/nav/div[2]/ul/li[2]/ul/li[2]/a") // Header -> Categories -> Repairs&Maintenance
+    public WebElement categoriesRepairAndMaintenance;
+
+    @FindBy(xpath = "(//*[text()='Repairs & Maintenance'])[1]") // Header > Category > Repairs & Maintenance
+    public WebElement repairsAndMaintenanceHeader;
 
 }
