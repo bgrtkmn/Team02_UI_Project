@@ -159,6 +159,12 @@ public class OmmShops{
     @FindBy(xpath = "//div[@id='dataList']//div[1]//div[1]//div[1]//div[1]//a[1]//img[1]") // on the repair tools first products
     public List<WebElement> repairToolsFirstProducts;
 
+    @FindBy(xpath = "(//*[@class='btn filter-btn'])") // Header > Categories Busieness Services > Filter Sory By seçim kutusu.
+    public WebElement FilterButton ;
+
+    @FindBy(xpath = "//*[@class='btn btn btn-search btn-block get_services'])") // Header > Categories Busieness Services > Filter Sory By seçim kutusu.
+    public WebElement SearchButton ;
+
 
 
 
