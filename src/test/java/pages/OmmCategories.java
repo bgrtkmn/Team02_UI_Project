@@ -5,11 +5,14 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
+
 public class OmmCategories{
 
     public OmmCategories(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
+
+    @FindBy( xpath = "//*[text()='Categories ']") // Header > Categories
 
     // @FindBy(xpath="//*[@*=' ']") formatında
     // web sayfasına ait web elementlerin locate'i alınacaktır.
@@ -18,6 +21,7 @@ public class OmmCategories{
 
 
     @FindBy(xpath = "//*[text()='Categories ']") // Header > Categories
+
     public WebElement HeaderCategories;
 
     @FindBy(xpath = "(//*[text()='Business Services'])[1]") // Header > Category > BusinessServices
@@ -34,6 +38,8 @@ public class OmmCategories{
 
     @FindBy(xpath = "(//*[@class='feather-arrow-right'])[1]") // Header > Category > Business Services > ilk şirket kartındaki visit store ikonu
     public WebElement VisitStoreIcon ;
+
+
 
     @FindBy(xpath = "//a[@href='Home Services'])") // Header > Category > Home Servis >
     public WebElement HomeServis;

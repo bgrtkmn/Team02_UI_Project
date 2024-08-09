@@ -33,7 +33,7 @@ public class OmmHomepage {
 
     // Personel services sayfasında bulunan hair style servisinin locate i
 
-    @FindBy(xpath = "//*[@id=\"shops-tab\"]")
+    @FindBy(xpath = "//*[@id='shops-tab']")
     public WebElement Shops;
 
 
@@ -64,10 +64,10 @@ public class OmmHomepage {
     @FindBy(xpath = "/html/body/div[1]/header/nav/ul/li/a")
     public WebElement loginBtn;
 
-    @FindBy(xpath = "//*[@id=\"login_email\"]")
+    @FindBy(xpath = "//*[@id='login_email']")
     public WebElement loginId;
 
-    @FindBy(xpath = "//*[@id=\"login_password\"]")
+    @FindBy(xpath = "//*[@id='login_password']")  //*[@id='login_password']
     public WebElement password;
 
     @FindBy(xpath = "/html/body/div[1]/header/nav/ul/li[4]/a/span/img")
@@ -77,10 +77,10 @@ public class OmmHomepage {
     public WebElement logoutBtn;
 
 
-    @FindBy(xpath = "//*[@id=\"emaillogin_submit\"]")
+    @FindBy(xpath = "//*[@id='emaillogin_submit']")
     public WebElement enterBtn;
 
-    @FindBy(xpath = "//*[@id=\"emailregistration_finals\"]")
+    @FindBy(xpath = "//*[@id='emailregistration_finals']")
     public WebElement enterBtnPassword;
 
     @FindBy(xpath = "/html/body/div[1]/header/nav/ul/li[4]/div/a[1]")
@@ -112,6 +112,11 @@ public class OmmHomepage {
 
     @FindBy(xpath = "//*[@id=\"cancel_reason\"]")
     public WebElement cancelReason;
+
+
+
+    @FindBy(xpath ="//*[@id='login_password']")
+    public WebElement paswordEnter;
 
 
     @FindBy(xpath = "(//*[@class=\"title-set\"])[2]")
