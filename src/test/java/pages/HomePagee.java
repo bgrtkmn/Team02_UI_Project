@@ -79,8 +79,10 @@ public class HomePagee {
     @FindBy(xpath = "//a[normalize-space()='Haircut']")
     public WebElement hairCutServices;
 
+    @FindBy(xpath = "//h2[contains(text(),'How It Works']")
+    public WebElement HowItWork ;
 
-
-
+    @FindBy(xpath = "//div[@class='row']")
+    public WebElement HowItWorkAciklamaikon;
 
 }

@@ -35,6 +35,26 @@ public class OmmCategories{
     @FindBy(xpath = "(//*[@class='feather-arrow-right'])[1]") // Header > Category > Business Services > ilk şirket kartındaki visit store ikonu
     public WebElement VisitStoreIcon ;
 
+    @FindBy(xpath = "//a[@href='Home Services'])") // Header > Category > Home Servis >
+    public WebElement HomeServis;
+
+    @FindBy(xpath = "//*[@id='shops-tab'])") // Header > Category > Home Servis >
+    public WebElement HomeServisShops;
+
+    @FindBy(xpath = "//*[@id='services-tab'])") // Header > Category > Home Servis >
+    public WebElement HomeServisService;
+
+    @FindBy(xpath = "//*[@clas='visit-store'])") // Header > Category > Home Servis >
+    public WebElement VisitStor;
+
+    @FindBy(xpath = "//*[@id='services-tab'])") // Header > Category > Home Servis >
+    public WebElement Servicesbutton;
+
+    @FindBy(xpath = "//*[@class='featute-info'])") // Header > Category > Home Servis >
+    public WebElement Amountbilgisi;
+
+    @FindBy(xpath = "//*[@class='fas-fa-map-marker-alt me-2'])") // Header > Category > Home Servis >
+    public WebElement Locationsbilgisi;
 
 
 }
