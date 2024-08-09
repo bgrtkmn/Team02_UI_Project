@@ -43,10 +43,10 @@ public class OnlineMasterMarket {
     @FindBy(xpath = "//*[@ ='//section[4]//div/div[2]/h4/a']")
     public List<WebElement> quickServicesList;
 
-    @FindBy(xpath = "/html/body/div[1]/header/nav/div[2]/ul/li[2]")
+    @FindBy(xpath = "/html/body/div[1]/header/nav/div[2]/ul/li[2]/a")
     public WebElement headerMenuCategories;
 
-    @FindBy(xpath = "/html/body/div[1]/header/nav/div[2]/ul/li[2]/ul/li[2]/a") // Header -> Categories -> Repairs&Maintenance
+    @FindBy(xpath = "//*[@id=\"dataList\"]/div[6]/div/div") // Header -> Categories -> Repairs&Maintenance
     public WebElement categoriesRepairAndMaintenance;
 
     @FindBy(xpath = "//*[@id='shops-tab']") // Repairs&Maintenance -> Shops
@@ -63,6 +63,12 @@ public class OnlineMasterMarket {
 
     @FindBy(xpath = "(//*[text()='Repairs & Maintenance'])[1]") // Header > Category > Repairs & Maintenance
     public WebElement repairsAndMaintenanceHeader;
+
+    @FindBy(xpath =" /html/body/div[1]/div/div[1]/div[1]/div/div[1]/ul/li[1]") //Header> Category > Repairs & Maintenance > Shops
+    public WebElement shopselement;
+
+    @FindBy(xpath = "/html/body/div[1]/div/div[1]/div[1]/div/div[1]/ul/li[2]") //Header> Category > Repairs & Maintenance > Service
+    public WebElement serviceelement;
 
     @FindBy(xpath = "(//*[text()='Moving & Transportation'])[1]") // Header > Category > Moving & Transportation
     public WebElement movingAndTransportationHeader;
