@@ -75,7 +75,7 @@ public class OnlineMasterMarket {
     @FindBy(xpath = "//*[@id='search-blk']") // Homepage Searchbar
     public WebElement searchBar;
 
-    @FindBy(xpath = "//*[@ ='//section[4]//div/div[2]/h4/a']") // Homepage Most Popular Services
+    @FindBy(xpath = "//*[@*='//section[4]//div/div[2]/h4/a']") // Homepage Most Popular Services
     public List<WebElement> quickServicesList;
 
     @FindBy(xpath = "/html/body/div[1]/header/nav/div[2]/ul/li[2]")

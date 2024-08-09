@@ -42,6 +42,7 @@ public class US018_TC001 {
     @And("user tests that Repairs & Maintenance is visible in the header menu")
     public void user_tests_that_repairs_maintenance_is_visible_in_the_header_menu() {
 
+        ReusableMethods.bekle(1); //Driver waits for 1 second
         actions.moveToElement(onlineMasterMarket.headerMenuCategories).perform(); //Mouse hovers categories in header menu
         actions.moveToElement(onlineMasterMarket.categoriesRepairAndMaintenance).perform(); //Mouse hovers to header categories and Repair&Maintenance
         Assert.assertTrue(onlineMasterMarket.categoriesRepairAndMaintenance.isDisplayed()); //Asserts that the web element is visible
